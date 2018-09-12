@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Charlotte AI Task: Search</title>
+</head>
+<body>
+  <form action="/searchUser" method="POST">
+
+  USERNAME: <input type="text" placeholder="name" name="name">
+
+  <button type="submit">Submit</button>
+</form>
+
+
+
+ <ul class="User">
+  <% for(var i=0; i<User.length; i++) {%>
+    <li class="User">
+      <span><%= User[i].name %></span>
+      <span><%= User[i].speciality %></span>
+      <span><%= User[i].address %></span>
+    </li>
+  <% } %>
+  </ul>
+
+</body>
+</html>
