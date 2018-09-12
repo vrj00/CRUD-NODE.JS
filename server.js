@@ -10,8 +10,8 @@ var query;
 MongoClient.connect(uri, (err, database) => {
   if (err) return console.log(err)
   db = database.db('charlottedb') // whatever your database name is
-  app.listen(3000, () => {
-    console.log('listening on 3000')
+  app.listen(process.env.PORT || 5000, () => {
+    console.log('listening on 5000')
   })
 }) 
 
